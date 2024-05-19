@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-md">
+        <div class="card m-3" id="websiteBorderfix">
+            <div class="container-fluid-sm">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="index.html">Cykel.se</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="nav-link" href="index.html">Hem</a>
+                                        <a class="nav-link" href="product.html">Produkter</a>
+                                        <a class="nav-link" aria-current="page" href="about.html">Om Oss</a>
+                                        <a class="nav-link active" aria-current="page" href="contact.html">Kontakt</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row px-4 pt-2">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Hem</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row px-4">
+                    <div class="col-12 px-4 mb-2 text-center">
+                        <h2 class="pb-2">Kontakta oss!</h2>
+                        <p class="paragraph text-center">Skicka ett meddelande i formuläret nedan om du är intresserad
+                            av någon av våra produkter eller om du har en fråga!</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 px-4 mb-4">
+                        <form id="messageForm">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="answerEmailAddress"
+                                    placeholder="john@doe.com" required>
+                            </div>
+                            <select class="mb-3 form-select" aria-label="Välj ärende" required>
+                                <option value="" selected>Välj ärende</option>
+                                <option value="current-order">Pågående beställning</option>
+                                <option value="new-order">Ny beställning</option>
+                                <option value="complaint">Reklamation</option>
+                                <option value="other">Övrig fråga</option>
+                            </select>
+                            <div class="mb-3 form-floating">
+                                <textarea class="form-control" placeholder="Skriv ditt meddelande här"
+                                    id="floatingTextarea" required minlength="10" maxlength="100"></textarea>
+                                <label for="floatingTextarea">Meddelande</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="regularCustomerBox">
+                                <label class="form-check-label" for="exampleCheck1">Stammis™?</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="regularCustomerID" class="form-label">Stammis™-ID</label>
+                                <input type="text" id="regularCustomerID" class="form-control" placeholder="12345"
+                                    minlength="5" maxlength="5" disabled required aria-describedby="regular-help">
+                                <div id="regular-help" class="form-text">Vi prioriterar ditt meddelande om du är
+                                    stammis.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Skicka</button>
+                        </form>
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="messageSentToast" class="toast align-items-center text-bg-primary border-0"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex">
+                                    <div class="toast-body">
+                                        Tack för ditt meddelande! Vi återkommer så fort som möjligt. </div>
+                                    <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                        data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="regularMessageSentToast" class="toast align-items-center text-bg-primary border-0"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex">
+                                    <div class="toast-body">
+                                        Tack för ditt meddelande! Vi prioriterar dig som Stammis™ och svarar så snart vi
+                                        kan!
+                                    </div>
+                                    <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                        data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="errorMessageToast" class="toast align-items-center text-bg-danger border-0"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex">
+                                    <div class="toast-body">
+                                        Ditt Stammis™-ID innehåller otillåtna symboler. Vänligen använd bara siffror och
+                                        försök igen!
+                                    </div>
+                                    <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                        data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-body-tertiary">
+                <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Hem</a>
+                        </li>
+                        <li class="nav-item"><a href="./product.html"
+                                class="nav-link px-2 text-body-secondary">Produkter</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">Om Oss</a>
+                        </li>
+                        <li class="nav-item"><a href="./contact.html"
+                                class="nav-link px-2 text-body-secondary">Kontakt</a></li>
+                    </ul>
+                    <p class="text-center text-body-secondary">© 2024 Cykel AB</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

@@ -12,7 +12,7 @@
 
 <body>
     <div class="container-md">
-        <div class="card m-3" style="--bs-card-border-radius: 0;">
+        <div class="card m-3" id="websiteBorderfix">
             <div class="container-fluid-sm">
                 <div class="row">
                     <div class="col-12">
@@ -26,8 +26,9 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <div class="navbar-nav">
-                                        <a class="nav-link" href="./index.html">Start</a>
-                                        <a class="nav-link active" aria-current="page" href="./product.html">Produkter</a>
+                                        <a class="nav-link" href="./index.html">Hem</a>
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./product.html">Produkter</a>
                                         <a class="nav-link" href="./about.html">Om Oss</a>
                                         <a class="nav-link" href="./contact.html">Kontakt</a>
                                     </div>
@@ -36,64 +37,83 @@
                         </nav>
                     </div>
                 </div>
-                <div class="row px-4 pt-4">
-                    <div class="col-6">
+                <div class="row px-4 pt-2">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Hem</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Produkter</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row px-4">
+                    <div class="col-12">
                         <h2>Vårt sortiment</h2>
                         <p>Vi erbjuder ett brett sortiment av cyklar för alla åldrar!</p>
                     </div>
                 </div>
-                <div class="row p-4 gap-2">
-                    <div class="col-lg">
+                <div class="row px-4 pb-4 gap-4">
+                    <div class="col-xl">
                         <div class="card">
                             <img src="assets/mountainbike2.jpg" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">SuperBike 5000</h5>
-                                <p class="card-text">Detta är vår bästa cykel för dig som är äventyrlig! Med stora däck med bra grepp klarar den all terräng utan problem!</p>
+                                <p class="card-text">Detta är vår bästa cykel för dig som är äventyrlig! Med stora däck
+                                    med bra grepp klarar den all terräng utan problem!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-xl">
                         <div class="card">
                             <img src="assets/forestbike2.jpg" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">CoolRide 50X</h5>
-                                <p class="card-text">Denna cykel passar dig som älskar att cykla långt! Med bra komfort sitter du bekvämt i många mil.</p>
+                                <p class="card-text">Denna cykel är vår bästa cykel för långa turer. Hög komfort och bra
+                                    kvalitet räcker långt!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-md">
                         <div class="card">
                             <img src="assets/wallbike2.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h5 class="card-title">CoolRide 50X</h5>
-                                <p class="card-text">Denna cykel passar dig som älskar att cykla långt! Med bra komfort sitter du bekvämt i många mil.</p>
+                                <h5 class="card-title">CoolRide 30X</h5>
+                                <p class="card-text">Denna cykel är vår bästa cykel för dig som behöver pålitlig och
+                                    hållbar cykel för vardaglig pendling.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-md">
                         <div class="card">
                             <img src="assets/beachbike2.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h5 class="card-title">CoolRide 50X</h5>
-                                <p class="card-text">Denna cykel passar dig som älskar att cykla långt! Med bra komfort sitter du bekvämt i många mil.</p>
+                                <h5 class="card-title">CoolRide 10X</h5>
+                                <p class="card-text">Denna cykel är vår billigaste, men fungerar alledels utmärkt för
+                                    dig som cyklar kortare sträckor några gånger i veckan.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row px-4 pb-4">
-                    <div class="col-sm col-6">
-                        <h3>Köp i butik</h3>
-                        <p>Tyvärr erbjuder vi inte köp online riktigt än. Besök oss i butik eller kontakta oss om du har frågor gällande just din cykel!</p>
+                    <div class="">
+                        <h3>Köp på webben</h3>
+                        <p>Tyvärr erbjuder vi inte köp online riktigt än. Besök oss i butik eller kontakta oss om du har
+                            frågor gällande just din cykel!</p>
                     </div>
                 </div>
             </div>
             <div class="container bg-body-tertiary">
                 <footer class="py-3 my-4">
                     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Start</a></li>
-                        <li class="nav-item"><a href="./product.html" class="nav-link px-2 text-body-secondary">Produkter</a></li>
-                        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">Om Oss</a></li>
-                        <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Kontakt</a></li>
+                        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Hem</a>
+                        </li>
+                        <li class="nav-item"><a href="./product.html"
+                                class="nav-link px-2 text-body-secondary">Produkter</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">Om Oss</a>
+                        </li>
+                        <li class="nav-item"><a href="./contact.html"
+                                class="nav-link px-2 text-body-secondary">Kontakt</a></li>
                     </ul>
                     <p class="text-center text-body-secondary">© 2024 Cykel AB</p>
                 </footer>

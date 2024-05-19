@@ -12,7 +12,7 @@
 
 <body>
     <div class="container-md">
-        <div class="card m-3 noborder" style="--bs-card-border-radius: 0;"> <!--Hack for Bootstrap-->
+        <div class="card m-3" id="websiteBorderfix">
             <div class="container-fluid-sm">
                 <div class="row">
                     <div class="col-12">
@@ -26,7 +26,7 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <div class="navbar-nav">
-                                        <a class="nav-link" href="./index.html">Start</a>
+                                        <a class="nav-link" href="./index.html">Hem</a>
                                         <a class="nav-link" href="./product.html">Produkter</a>
                                         <a class="nav-link active" aria-current="page" href="./about.html">Om Oss</a>
                                         <a class="nav-link" href="./contact.html">Kontakt</a>
@@ -36,20 +36,49 @@
                         </nav>
                     </div>
                 </div>
-                <div class="row px-4 pt-4">
-                    <div class="col-12 px-4 mb-2 center-text">
-                        <h2 class="pb-2">Om Cykel AB</h2>
-                        <p class="paragraph text-center">Vi erbjuder ett brett sortiment av cyklar för alla åldrar! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet dignissimos minus illum quos sapiente. Ad, corporis deleniti quos obcaecati dolor ullam numquam consequatur illo ex. Laudantium est, vero facere soluta, dolorem provident molestias expedita necessitatibus voluptas ex autem alias saepe esse. At inventore eaque temporibus, nostrum blanditiis nobis expedita officia dicta autem velit veniam dolorem aspernatur laboriosam tempora itaque qui illum quae, quo fuga eius veritatis maiores corrupti? Dicta commodi magni ipsam sit iusto hic porro quidem cum earum? Delectus harum aperiam iste expedita amet quisquam magnam fugit, reprehenderit consectetur nobis praesentium, at blanditiis minima minus, corporis repellat doloribus hic distinctio modi maiores fuga facere ex libero iusto? Voluptas architecto quam, laborum earum voluptatum dicta at sequi deleniti eveniet maiores beatae nisi officia deserunt, nemo facere cum sit ex vel tenetur adipisci quisquam ipsum ut. Itaque nostrum nulla nobis natus quaerat pariatur, numquam beatae sed! Fuga cum possimus a, blanditiis quos iste aperiam ratione beatae esse recusandae voluptatibus alias quisquam dolorum distinctio consequatur ipsa officiis non ab quo impedit! Cum distinctio aperiam esse fugit laboriosam explicabo, voluptatibus nam dolorem ducimus blanditiis architecto aspernatur tenetur! Aperiam ullam placeat perferendis nostrum expedita fugit facilis ut, itaque tempore id vero, quo dicta. Beatae consectetur dolore voluptatum perferendis exercitationem! Repellendus ex velit in, esse, necessitatibus, est ipsam dolorem expedita commodi libero impedit cupiditate. Optio corrupti tempora laborum nihil voluptatibus, ab nostrum, rerum fugit officiis obcaecati quos perspiciatis tempore vel iure dolore. Nobis odit possimus officiis suscipit quod ipsum voluptas alias tenetur, itaque pariatur.</p>
+                <div class="row px-4 pt-2">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Hem</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Om oss</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 px-4">
+                        <h2 class="pb-2 text-center">Om Cykel AB</h2>
+                    </div>
+                </div>
+                <div class="row px-4">
+                    <div class="col-md-6 col-12 px-4 my-2 flex align-self-center">
+                        <h4 class="text-center">Vår historia</h4>
+                        <p class="text-center">Vi erbjuder ett brett sortiment av cyklar för alla åldrar! Allt
+                            startade när vi inte kunde hitta en bra cykel som passade alla våra behov. Då startade vi
+                            Cykel AB för att alla ska kunna hitta sin alldeles egna cykel!</p>
+                        <h5 class="text-center mb-3">Se vårat sortiment eller kontakta oss för mer information!</h5>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary mx-1" role="button" href="product.html">Sortiment</a>
+                            <a class="btn btn-primary mx-1" role="button" href="contact.html">Kontakt</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 px-4 my-2">
+                        <img class="about-image" src="./assets/childbike.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="container bg-body-tertiary">
+            <div class="container-fluid bg-body-tertiary">
                 <footer class="py-3 my-4">
                     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Start</a></li>
-                        <li class="nav-item"><a href="./product.html" class="nav-link px-2 text-body-secondary">Produkter</a></li>
-                        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">Om Oss</a></li>
-                        <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Kontakt</a></li>
+                        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Hem</a>
+                        </li>
+                        <li class="nav-item"><a href="./product.html"
+                                class="nav-link px-2 text-body-secondary">Produkter</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">Om Oss</a>
+                        </li>
+                        <li class="nav-item"><a href="./contact.html"
+                                class="nav-link px-2 text-body-secondary">Kontakt</a></li>
                     </ul>
                     <p class="text-center text-body-secondary">© 2024 Cykel AB</p>
                 </footer>
